@@ -9,16 +9,19 @@
 </template>
 <script>
 export default {
-    name: 'Hero'
+    name: 'NavBar'
 }
 </script>
 <style lang="scss">
     nav {
+        color: #ABB2BF;
         display: flex;
+        height: 4em;
         justify-content: flex-start;
         div {
             border: 2px solid black;
             flex: 1;
+            font-size: 2.2em;
         }
     }
 </style>
