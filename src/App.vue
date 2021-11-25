@@ -1,6 +1,5 @@
 <template class="mainLevel">
   <NavBar/>
-
 </template>
 
 <script>

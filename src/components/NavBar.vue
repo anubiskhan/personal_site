@@ -1,8 +1,10 @@
 <template>
-    <nav class="nav">  
-        <div class="me">Me</div>  
-        <div class="creations">Creations</div>  
+    <nav class="nav">
+        <router-link to="/">Home</router-link>
+        <router-link to="/me">Me</router-link>
+        <router-link to="/creations">Creations</router-link>
     </nav>
+    <router-view />
     <div class="body">
         
     </div>
