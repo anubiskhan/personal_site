@@ -4,12 +4,10 @@
         <router-link to="/me">Me</router-link>
         <router-link to="/creations">Creations</router-link>
     </nav>
-    <router-view />
-    <div class="body">
-        
-    </div>
+    <router-view></router-view>
 </template>
 <script>
+// import router from './router/index.js'
 export default {
     name: 'NavBar'
 }

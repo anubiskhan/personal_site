@@ -14,10 +14,10 @@ export default {
 </script>
 
 <style lang="scss">
-body {
-  background: #282C34;
-  color: #ABB2BF;
-}
+// body {
+//   background: #282C34;
+//   color: #ABB2BF;
+// }
 .mainLevel {
   
   // z-index: ;
