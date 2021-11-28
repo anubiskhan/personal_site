@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-    
+    name: 'Me'
 }
 </script>
 <style lang="scss">

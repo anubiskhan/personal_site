@@ -1,14 +1,20 @@
 <template class="mainLevel">
+  <Creations/>
   <NavBar/>
+  <Me/>
 </template>
 
 <script>
+import Creations from './components/Creations.vue'
+import Me from './components/Me.vue'
 import NavBar from './components/NavBar.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar
+    Creations,
+    Me,
+    NavBar,
   }
 }
 </script>
