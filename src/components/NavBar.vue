@@ -1,9 +1,9 @@
 <template>
-    <nav class="nav">
-        <router-link to="/">Home</router-link>
-        <router-link to="/me">Me</router-link>
-        <router-link to="/creations">Creations</router-link>
-    </nav>
+    <div class="nav">
+        <router-link to="/" class="someClass">Home</router-link>
+        <router-link to="/me" class="someClass">Me</router-link>
+        <router-link to="/creations" class="someClass">Creations</router-link>
+    </div>
     <router-view></router-view>
 </template>
 <script>
@@ -13,15 +13,16 @@ export default {
 }
 </script>
 <style lang="scss">
-    nav {
+    .nav {
         color: #ABB2BF;
         display: flex;
-        height: 4em;
-        justify-content: flex-start;
-        div {
-            border: 2px solid black;
-            flex: 1;
-            font-size: 2.2em;
+        justify-content: center;
+        border: 2px solid black;
+        flex: 1;
+        .someClass {
+            padding: 10px;
+            margin: 0px 10px;
+            background: blue;
         }
     }
 </style>
