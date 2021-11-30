@@ -1,6 +1,6 @@
 <template lang="">
     <div>
-        This is home
+        This is home!
     </div>
 </template>
 <script>
