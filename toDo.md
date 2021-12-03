@@ -1,0 +1,1 @@
+- Create a "Bad version" option where visitor can click to experience the bad UI/UX

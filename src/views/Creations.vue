@@ -1,6 +1,7 @@
 <template lang="">
     <div>
         <h1>This is CREATIONS</h1>
+        <h3>this is a list</h3>
         <ol>
             <li v-for="creation in myCreations" :key="creation.id"> {{ creation.title }}</li>
         </ol>
