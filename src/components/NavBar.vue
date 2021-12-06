@@ -19,10 +19,12 @@ export default {
         justify-content: center;
         border: 2px solid black;
         flex: 1;
+        padding: .5em 0;
+        margin: 0 20vw;
         .someClass {
             padding: 10px;
             margin: 0px 10px;
             background: blue;
         }
     }
-</style>
+</style>3
