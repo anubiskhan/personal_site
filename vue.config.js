@@ -1,5 +1,7 @@
 module.exports = {
-    publicPath: process.env.NODE_ENV === "production" ? "/personal_site/" : "/",
+    // devServer: {
+    //     https: true
+    // },
     css: {
         loaderOptions: {
             sass: {

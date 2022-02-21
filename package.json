@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "aws --profile vue-deployer --region us-west-2 s3 sync ./dist s3://www.kellyrs.com --delete",
+    "invalidate": "aws cloudfront create-invalidation --distribution-id EEAAMKCEAL8HU --paths '/*'"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -22,7 +24,8 @@
     "eslint-plugin-vue": "^7.0.0",
     "node-sass": "^6.0.1",
     "sass": "^1.43.4",
-    "sass-loader": "^10.2.0"
+    "sass-loader": "^10.2.0",
+    "vue-hot-reload-api": "^1.2.0"
   },
   "eslintConfig": {
     "root": true,
