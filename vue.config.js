@@ -1,7 +1,7 @@
 module.exports = {
-    // devServer: {
-    //     https: true
-    // },
+    devServer: {
+        https: process.env.NODE_ENV === 'production' ? true : false
+    },
     css: {
         loaderOptions: {
             sass: {
@@ -16,3 +16,4 @@ module.exports = {
         }
     }
 };
+
