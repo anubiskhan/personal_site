@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --host localhost",
     "build": "vue-cli-service build --https",
     "lint": "vue-cli-service lint",
     "deploy": "aws --profile vue-deployer --region us-west-2 s3 sync ./dist s3://www.kellyrs.com --delete",
