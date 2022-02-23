@@ -1,6 +1,6 @@
 <template>
-    <div class="nav">
-        <router-link to="/" class="someClass">Bem</router-link>
+    <div class="navBarContainer">
+        <router-link to="/" class="someClass">Welcome</router-link>
         <router-link to="/me" class="someClass">Me</router-link>
         <router-link to="/creations" class="someClass">Creations</router-link>
     </div>
@@ -13,18 +13,22 @@ export default {
 }
 </script>
 <style lang="scss">
-    .nav {
-        color: #ABB2BF;
-        display: flex;
+    .navBarContainer {
+        font-size: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         justify-content: center;
-        border: 2px solid black;
-        flex: 1;
         padding: .5em 0;
         margin: 0 20vw;
         .someClass {
             padding: 10px;
             margin: 0px 10px;
-            background: $pacific-blue;
+            color: $brown;
+            background: $gray;
+        }
+        a {
+            color: $white;
+            text-decoration: none;
         }
     }
 </style>3
