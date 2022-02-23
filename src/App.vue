@@ -1,4 +1,4 @@
-<template class="mainLevel">
+<template class="appContainer">
   <NavBar/>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 
 <style lang="scss">
 body {
-  background: #282C34;
+  background: $black;
 }
 
 #app {
@@ -24,11 +24,5 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin-top: 60px;
-  color: #ABB2BF;
-  font-size: 2em;
-  a {
-    color: #ABB2BF;
-    text-decoration: none;
-  }
 }
 </style>
