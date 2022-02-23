@@ -1,5 +1,5 @@
 <template lang="">
-    <div>
+    <div class="creationsContainer">
         <h1>This is CREATIONS</h1>
         <h3>this is a list</h3>
         <ol>
@@ -19,5 +19,9 @@ export default {
 }
 </script>
 <style lang="scss">
-    
+    .creationsContainer {
+        color: $orange;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 </style>
