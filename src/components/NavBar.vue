@@ -24,7 +24,7 @@ export default {
         .someClass {
             padding: 10px;
             margin: 0px 10px;
-            background: blue;
+            background: $pacific-blue;
         }
     }
 </style>3
