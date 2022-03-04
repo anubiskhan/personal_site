@@ -1,14 +1,14 @@
 <template class="appContainer">
-  <NavBar/>
+  <Home/>
 </template>
 
 <script>
-import NavBar from './components/NavBar.vue'
+import Home from './views/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    NavBar,
+    Home,
   }
 }
 </script>
