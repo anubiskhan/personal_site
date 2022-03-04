@@ -12,6 +12,9 @@
                    <a href="mailto: kellyrschroeder@gmail.com" target=”_blank” rel=”noopener”>Email</a>   
                 </div>
                 <div> 
+                   <a href="https://www.linkedin.com/in/kelly-schroeder/" target=”_blank” rel=”noopener”>LinkedIn</a>   
+                </div>
+                <div> 
                    <a href="https://github.com/anubiskhan" target=”_blank” rel=”noopener”>Github</a>
                 </div>
                 <div> 
@@ -20,6 +23,20 @@
             </div>
         </div>
         <div class="body">
+                <div class="colorBlockWrapper">
+                    <div class="colorBlockBrown">
+                        
+                    </div>
+                    <div class="colorBlockGray">
+
+                    </div>
+                    <div class="colorBlockGreen">
+
+                    </div>
+                    <div class="colorBlockOrange">
+
+                    </div>
+                </div>
             <div class="bodyInner">
                 For the last three and a half years I have been working extensively with Ruby on Rails, PostgreSQL, Vue.js, AWS, CSS, and HTML.
             </div>
@@ -65,6 +82,28 @@ export default {
             width: 80%;
             margin: auto;
         }
+    }
+    .colorBlockWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5% 10%;
+    }
+    .colorBlockGreen, .colorBlockBrown, .colorBlockOrange, .colorBlockGray {
+        height: 1em;
+        width: 1em;
+    }
+    .colorBlockGreen {
+        background: $green;
+    }
+    .colorBlockBrown {
+        background: $brown;
+    }
+    .colorBlockOrange {
+        background: $orange;
+    }
+    .colorBlockGray {
+        background: $gray;
     }
     @media only screen and (max-width: 768px) {
         .homeContainer {
