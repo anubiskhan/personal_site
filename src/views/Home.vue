@@ -2,7 +2,10 @@
     <div class="homeContainer">
         <div class="aside">
             <div class="asideInner">
-                <h1>Kelly Schroeder</h1>
+                    <div class="nameWithLogo">
+                        <h1>Kelly Schroeder</h1>
+                        <a target="_blank" href="https://icons8.com/icon/x-DEqbbpNxV8/national-park"><img :src="require('../assets/fav.png')"/></a>
+                    </div>
                 <p>
                     Hello, I'm a software developer living in the Pacific Northwest. 
                     I like to make new things, fix broken things, and optimize existing things. 
@@ -16,9 +19,6 @@
                 </div>
                 <div> 
                    <a href="https://github.com/anubiskhan" target=”_blank” rel=”noopener”>Github</a>
-                </div>
-                <div> 
-                   <a href="https://github.com/anubiskhan/personal_site" target=”_blank” rel=”noopener”>This site</a>
                 </div>
             </div>
         </div>
@@ -38,7 +38,13 @@
                     </div>
                 </div>
             <div class="bodyInner">
-                For the last three and a half years I have been working extensively with Ruby on Rails, PostgreSQL, Vue.js, AWS, CSS, and HTML.
+                <p>
+                    For the last three and a half years I have been working extensively with Ruby on Rails, PostgreSQL, Vue.js, AWS, CSS, and HTML.
+                </p>
+                <p>
+                    <a href="https://github.com/anubiskhan/personal_site" target=”_blank” rel=”noopener”>This site</a> is built using Vue.js. Hosted in a secure S3 and distributed via Cloudfront.
+                    
+                </p>
             </div>
         </div>
     </div>
@@ -66,10 +72,21 @@ export default {
         grid-row-start: 2;
         grid-row-end: 14;
         text-align: left;
-        margin-bottom: 10%;
         .asideInner {
             width: 80%;
             margin: auto;
+        }
+        .nameWithLogo {
+            display: flex;
+            justify-content: space-between;
+            a {
+                margin: auto;
+            }
+            img {
+                height: 64px;
+                width: 64px;
+                // margin: auto;
+            }
         }
     }
     .body {
@@ -90,8 +107,8 @@ export default {
         margin: 5% 10%;
     }
     .colorBlockGreen, .colorBlockBrown, .colorBlockOrange, .colorBlockGray {
-        height: 1em;
-        width: 1em;
+        height: .75em;
+        width: .75em;
     }
     .colorBlockGreen {
         background: $green;
@@ -113,6 +130,10 @@ export default {
           .aside, .body {
             grid-column: auto;
             grid-row: auto;
+        }
+        .colorBlockGreen, .colorBlockBrown, .colorBlockOrange, .colorBlockGray {
+            height: .5em;
+            width: .5em;
         }
     }
 </style>
