@@ -24,17 +24,17 @@
         </div>
         <div class="body">
                 <div class="colorBlockWrapper">
-                    <div class="colorBlockBrown">
-                        
-                    </div>
-                    <div class="colorBlockGray">
-
-                    </div>
                     <div class="colorBlockGreen">
 
                     </div>
                     <div class="colorBlockOrange">
 
+                    </div>
+                    <div class="colorBlockGray">
+
+                    </div>
+                    <div class="colorBlockBrown">
+                        
                     </div>
                 </div>
             <div class="bodyInner">
