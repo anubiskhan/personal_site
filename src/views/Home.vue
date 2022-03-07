@@ -55,10 +55,10 @@ export default {
 }
 </script>
 <style lang="scss">
-    a {
-        color: $blue;
-        text-decoration: none;
-    }
+    // a {
+    //     color: $blue;
+    //     text-decoration: none;
+    // }
     .homeContainer {
         color: $white;
         display: grid;
