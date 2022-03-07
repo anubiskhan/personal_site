@@ -12,7 +12,7 @@
                     Big fan of automation, integrations, scalability, modular design, and maintainability. 
                 </p>
                 <div> 
-                   <a href="mailto: kellyrschroeder@gmail.com" target=”_blank” rel=”noopener”>Email</a>   
+                   <a href="mailto: kelly@kellyrs.com" target=”_blank” rel=”noopener”>Email</a>   
                 </div>
                 <div> 
                    <a href="https://www.linkedin.com/in/kelly-schroeder/" target=”_blank” rel=”noopener”>LinkedIn</a>   
