@@ -10,6 +10,7 @@
     "invalidate": "aws cloudfront create-invalidation --distribution-id EEAAMKCEAL8HU --paths '/*'"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
     "vue-router": "4"

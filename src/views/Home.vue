@@ -50,9 +50,19 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
+
 export default {
     name: 'Home'
 }
+
+axios.get('/')
+    .then(response => {
+        console.log(response.data);
+    })
+    .catch(error => {
+        console.log(error);
+    });
 </script>
 <style lang="scss">
     // a {
