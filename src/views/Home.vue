@@ -56,7 +56,7 @@ export default {
     name: 'Home'
 }
 
-axios.get('http://35.87.143.195:3000/')
+axios.get('https://35.87.143.195:3000/')
     .then(response => {
         console.log(response.data);
     })
