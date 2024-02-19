@@ -2,9 +2,9 @@
     <div class="navBarContainer">
         <div/>
         <div class="navFlex">
-            <router-link to="/" class="someClass">Home</router-link>
+            <router-link to="/" class="someClass">Me</router-link>
             <!-- <router-link to="/me" class="someClass">Me</router-link> -->
-            <router-link to="/creations" class="someClass">Creations</router-link>    
+            <router-link to="/things" class="someClass">Things</router-link>    
         </div>
         <div/>
     </div>
