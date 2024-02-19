@@ -1,5 +1,5 @@
 import { createWebHistory, createRouter } from "vue-router";
-import Creations from "@/views/Creations.vue";
+import Things from "@/views/Things.vue";
 import Home from "@/views/Home.vue";
 import Me from "@/views/Me.vue";
 
@@ -15,9 +15,12 @@ const routes = [
         component: Me,
     },
     {
-        path: "/creations",
-        name: "Creations",
-        component: Creations,
+        path: "/things",
+        name: "Things",
+        component: Things,
+        meta: {
+            someData: "here is some data"
+        }
     },
 ];
 

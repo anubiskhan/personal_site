@@ -4,7 +4,7 @@
             <div class="asideInner">
                     <div class="nameWithLogo">
                         <h1>Kelly Schroeder</h1>
-                        <a target="_blank" href="https://icons8.com/icon/x-DEqbbpNxV8/national-park"><img :src="require('../assets/fav.png')"/></a>
+                        <a target="_blank" href="https://icons8.com/icon/x-DEqbbpNxV8/national-park"><img :src="require('../assets/fav2.png')"/></a>
                     </div>
                 <p>
                     Hello, I'm a software developer living in the Pacific Northwest. 
@@ -39,7 +39,13 @@
                 </div>
             <div class="bodyInner">
                 <p>
-                    For the last three and a half years I have been working extensively with Ruby on Rails, PostgreSQL, Vue.js, AWS, CSS, and HTML.
+                    For the last six I have been working extensively with Ruby on Rails, PostgreSQL, and AWS.
+                </p>
+                <p>
+                    I'm capable with Vue.js, Python, DevOps, CloudOps, project management, finance, economics, guitar, and carpentry. 
+                </p>
+                <p>
+                     I'm <i>begrudingly</i> capable with Wordpress, CraftCMS, CSS, and HTML.
                 </p>
                 <p>
                     <a href="https://github.com/anubiskhan/personal_site" target=”_blank” rel=”noopener”>This site</a> is built using Vue.js. Hosted in a secure S3 and distributed via Cloudfront.
@@ -50,15 +56,33 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
+
 export default {
-    name: 'Home'
+    name: 'Home',
+    mounted() {
+        this.fetchProjectsList
+    },
+    methods: {
+            fetchProjectsList() {
+            axios.get('https://jsonplaceholder.typicode.com/todos/1')
+                .then(response => {
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+            },
+    },
 }
+
+
 </script>
 <style lang="scss">
-    a {
-        color: $blue;
-        text-decoration: none;
-    }
+    // a {
+    //     color: $blue;
+    //     text-decoration: none;
+    // }
     .homeContainer {
         color: $white;
         display: grid;

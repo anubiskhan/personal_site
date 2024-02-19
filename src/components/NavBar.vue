@@ -1,8 +1,12 @@
 <template>
     <div class="navBarContainer">
-        <router-link to="/" class="someClass">Welcome</router-link>
-        <router-link to="/me" class="someClass">Me</router-link>
-        <router-link to="/creations" class="someClass">Creations</router-link>
+        <div/>
+        <div class="navFlex">
+            <router-link to="/" class="someClass">Me</router-link>
+            <!-- <router-link to="/me" class="someClass">Me</router-link> -->
+            <router-link to="/things" class="someClass">Things</router-link>    
+        </div>
+        <div/>
     </div>
     <router-view></router-view>
 </template>
@@ -15,20 +19,20 @@ export default {
 <style lang="scss">
     .navBarContainer {
         font-size: 2em;
+        margin: auto;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-content: center;
-        padding: .5em 0;
-        margin: 0 20vw;
-        .someClass {
-            padding: 10px;
-            margin: 0px 10px;
-            color: $brown;
-            background: $gray;
-        }
-        a {
-            color: $white;
-            text-decoration: none;
-        }
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .navFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .someClass {
+        align-content: center;
+        // margin: 0 20%;
+        // padding: 10px;
+        // margin: 0px 10px;
+        // color: $brown;
+        // background: $gray;
     }
 </style>3
