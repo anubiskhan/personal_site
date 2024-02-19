@@ -7,17 +7,28 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
+yarn serve
 ```
 
 ### Lints and fixes files
 ```
-yarn run lint
+yarn lint
+```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Pushes files up to S3
+```
+yarn deploy
+```
+
+### Invalidates current CloudFront cache
+#### Run this after you deploy
+```
+yarn invalidate
 ```
 
 ### Customize configuration
